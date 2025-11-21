@@ -1,0 +1,242 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - CMCS</title>
+    <script type="importmap"></script>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/ClassPrep.styles.css" asp-append-version="true" />
+    <style>
+        :root {
+            --primary-orange: #FF6B35;
+            --dark-blue: #2D3E50;
+            --medium-blue: #3498DB;
+            --light-gray: #ECF0F1;
+            --accent-yellow: #F39C12;
+            --success-green: #27AE60;
+            --warning-orange: #E67E22;
+        }
+
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .navbar {
+            background: linear-gradient(135deg, var(--dark-blue) 0%, #1a2530 100%) !important;
+            border-bottom: 4px solid var(--primary-orange) !important;
+        }
+
+        .navbar-brand {
+            color: white !important;
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+
+        .navbar-brand:hover {
+            color: var(--accent-yellow) !important;
+        }
+
+        .nav-link {
+            color: white !important;
+            font-weight: 500;
+            margin: 0 5px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .nav-link:hover {
+            color: var(--accent-yellow) !important;
+            background-color: rgba(255, 255, 255, 0.1);
+            transform: translateY(-2px);
+        }
+
+        /* Role-specific menu item colors */
+        .nav-item:has(a[href*="MyClaims"]),
+        .nav-item:has(a[href*="Create"]),
+        .nav-item:has(a[href*="PaymentSimulation"]) {
+            border-left: 3px solid var(--success-green);
+        }
+
+        .nav-item:has(a[href*="PmPending"]),
+        .nav-item:has(a[href*="PmNotifications"]) {
+            border-left: 3px solid var(--medium-blue);
+        }
+
+        .nav-item:has(a[href*="CmReviewList"]),
+        .nav-item:has(a[href*="CmNotifications"]) {
+            border-left: 3px solid var(--warning-orange);
+        }
+
+        .nav-item:has(a[href*="HrAllClaims"]),
+        .nav-item:has(a[href*="HrSummary"]),
+        .nav-item:has(a[href*="HrExportCsv"]),
+        .nav-item:has(a[href*="EmployeeList"]),
+        .nav-item:has(a[href*="AddEmployee"]) {
+            border-left: 3px solid var(--primary-orange);
+        }
+
+        .navbar-toggler {
+            border-color: rgba(255, 255, 255, 0.5);
+        }
+
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        }
+
+        .footer {
+            background: linear-gradient(135deg, var(--dark-blue) 0%, #1a2530 100%) !important;
+            color: white !important;
+            border-top: 3px solid var(--primary-orange) !important;
+        }
+
+        .footer a {
+            color: var(--accent-yellow) !important;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            color: white !important;
+        }
+
+        .container main {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 25px;
+            margin-top: 20px;
+            border-left: 5px solid var(--primary-orange);
+        }
+
+        /* Login partial styling */
+        .navbar-nav .nav-link.text-dark[href*="Login"],
+        .navbar-nav .nav-link.text-dark[href*="Register"],
+        .navbar-nav .nav-link.text-dark[href*="Logout"] {
+            background-color: var(--primary-orange);
+            color: white !important;
+            border-radius: 20px;
+            padding: 8px 20px !important;
+            margin-left: 10px;
+            border: 2px solid transparent;
+        }
+
+        .navbar-nav .nav-link.text-dark[href*="Login"]:hover,
+        .navbar-nav .nav-link.text-dark[href*="Register"]:hover,
+        .navbar-nav .nav-link.text-dark[href*="Logout"]:hover {
+            background-color: transparent;
+            border-color: var(--primary-orange);
+            color: var(--primary-orange) !important;
+        }
+
+        /* Welcome message styling */
+        .navbar-text {
+            color: var(--accent-yellow) !important;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm border-bottom box-shadow mb-3">
+            <div class="container">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
+                    🏗️ Construction Claims App
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <!-- Home - visible to everyone -->
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">🏠 Home</a>
+                        </li>
+
+                        @* Worker menu *@
+                        @if (User.IsInRole("Worker"))
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-controller="WorkClaims" asp-action="MyClaims">📋 My Claims</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-controller="WorkClaims" asp-action="Create">➕ New Claim</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-controller="WorkClaims" asp-action="PaymentSimulation">💰 Payment Simulation</a>
+                            </li>
+                        }
+
+                        @* Project Manager menu *@
+                        @if (User.IsInRole("ProjectManager"))
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-controller="WorkClaims" asp-action="PmPending">📊 PM Pending Claims</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-controller="WorkClaims" asp-action="PmNotifications">🔔 PM Notifications</a>
+                            </li>
+                        }
+
+                        @* Construction Manager menu *@
+                        @if (User.IsInRole("ConstructionManager"))
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-controller="WorkClaims" asp-action="CmReviewList">🏗️ CM Claims</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-controller="WorkClaims" asp-action="CmNotifications">📢 Notifications</a>
+                            </li>
+                        }
+
+                        @* HR menu *@
+                        @if (User.IsInRole("HR"))
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-controller="WorkClaims" asp-action="HrAllClaims">📈 All Claims</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-controller="Hr" asp-action="HrSummary">📊 Summary</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-controller="Hr" asp-action="HrExportCsv">💾 Export CSV</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-controller="Hr" asp-action="EmployeeList">👥 Employees</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-controller="Hr" asp-action="AddEmployee">➕ Add Employee</a>
+                            </li>
+                        }
+
+                    </ul>
+
+                    <ul class="navbar-nav">
+                        <partial name="_LoginPartial" />
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container text-center">
+            &copy; 2025 - Construction Monthly Claim System - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy Policy</a>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

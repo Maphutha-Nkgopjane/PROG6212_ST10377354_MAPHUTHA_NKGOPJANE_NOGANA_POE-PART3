@@ -1,0 +1,540 @@
+﻿@{
+    ViewData["Title"] = "Construction Claims Portal";
+    var isWorker = User.IsInRole("Worker");
+    var isPm = User.IsInRole("ProjectManager");
+    var isCm = User.IsInRole("ConstructionManager");
+    var isHr = User.IsInRole("HR");
+}
+
+<style>
+    .hero-section {
+        min-height: 60vh;
+        border-radius: 24px;
+        padding: 3rem;
+        background: radial-gradient(circle at top left, #77ed96 0, #b067f5 40%, #F2F527 100%);
+        color: #111;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        position: relative;
+        overflow: hidden;
+    }
+
+    .hero-overlay-pill {
+        position: absolute;
+        width: 220px;
+        height: 220px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.18);
+        top: -40px;
+        right: -40px;
+        filter: blur(1px);
+    }
+
+    .hero-overlay-pill-bottom {
+        position: absolute;
+        width: 260px;
+        height: 260px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.14);
+        bottom: -60px;
+        left: -40px;
+        filter: blur(1px);
+    }
+
+    .hero-title {
+        font-size: 2.8rem;
+        font-weight: 800;
+        letter-spacing: 1px;
+    }
+
+    .hero-subtitle {
+        font-size: 1.1rem;
+        max-width: 520px;
+        margin-top: 1rem;
+    }
+
+    .hero-tag {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.35rem 0.9rem;
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.3);
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        letter-spacing: 0.12em;
+        font-weight: 600;
+    }
+
+    .hero-actions .btn-primary {
+        background: #b067f5;
+        border-color: #b067f5;
+        font-weight: 600;
+        padding: 0.7rem 1.6rem;
+        border-radius: 999px;
+    }
+
+    .hero-actions .btn-outline-light {
+        border-radius: 999px;
+        font-weight: 600;
+    }
+
+    .hero-badge-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 0.75rem;
+        margin-top: 2rem;
+    }
+
+    .hero-badge {
+        background: rgba(255, 255, 255, 0.88);
+        border-radius: 18px;
+        padding: 0.8rem 1rem;
+        display: flex;
+        align-items: center;
+        gap: 0.7rem;
+        font-size: 0.9rem;
+    }
+
+    .hero-badge-dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 999px;
+        background: #b067f5;
+    }
+
+    .role-chip {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.4rem;
+        padding: 0.25rem 0.6rem;
+        border-radius: 999px;
+        font-size: 0.75rem;
+        background: rgba(0, 0, 0, 0.12);
+        color: #222;
+        margin-right: 0.35rem;
+        margin-bottom: 0.35rem;
+    }
+
+    .role-chip span.icon {
+        display: inline-flex;
+        width: 18px;
+        height: 18px;
+        border-radius: 999px;
+        align-items: center;
+        justify-content: center;
+        background: #fff;
+        font-size: 0.7rem;
+    }
+
+    .login-card-highlight {
+        background: radial-gradient(circle at top left, #111827 0, #020617 45%, #111827 100%);
+        color: #f9fafb;
+        border-radius: 20px;
+        padding: 1.7rem 1.5rem;
+        position: relative;
+        box-shadow: 0 18px 40px rgba(0, 0, 0, 0.45);
+        animation: pulseCard 2.8s infinite ease-in-out;
+        border: 1px solid rgba(148, 163, 184, 0.6);
+    }
+
+    .login-card-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 0.6rem;
+    }
+
+    .login-card-title {
+        font-size: 1.1rem;
+        font-weight: 700;
+    }
+
+    .login-card-pill {
+        padding: 0.25rem 0.75rem;
+        border-radius: 999px;
+        font-size: 0.75rem;
+        background: rgba(15, 23, 42, 0.6);
+        border: 1px solid rgba(248, 250, 252, 0.18);
+    }
+
+    .login-card-table {
+        width: 100%;
+        font-size: 0.85rem;
+        margin-top: 0.5rem;
+        table-layout: fixed;
+    }
+
+        .login-card-table thead {
+            font-size: 0.78rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: #9ca3af;
+        }
+
+        .login-card-table th,
+        .login-card-table td {
+            padding: 0.3rem 0.25rem;
+            border-bottom: 1px solid rgba(55, 65, 81, 0.7);
+            white-space: normal;
+            word-wrap: break-word;
+        }
+
+    .login-card-chip {
+        display: inline-flex;
+        padding: 0.1rem 0.4rem;
+        border-radius: 999px;
+        font-size: 0.7rem;
+        background: rgba(248, 250, 252, 0.12);
+    }
+
+    .login-card-note {
+        font-size: 0.8rem;
+        color: #d1d5db;
+        margin-top: 0.5rem;
+    }
+
+
+    .quick-links-section {
+        margin-top: 2.5rem;
+    }
+
+    .quick-link-card {
+        border-radius: 18px;
+        padding: 1.2rem 1.3rem;
+        border: 1px solid rgba(148, 163, 184, 0.3);
+        background: #f9fafb;
+        transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+    }
+
+    .quick-link-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.12);
+        border-color: #b067f5;
+    }
+
+    .quick-link-title {
+        font-weight: 600;
+        margin-bottom: 0.2rem;
+    }
+
+    .quick-link-pill {
+        display: inline-flex;
+        padding: 0.15rem 0.5rem;
+        border-radius: 999px;
+        font-size: 0.75rem;
+        background: rgba(176, 103, 245, 0.08);
+        color: #4b5563;
+        margin-bottom: 0.4rem;
+    }
+
+    .hero-cta-kpi {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin-top: 1.5rem;
+    }
+
+    .hero-mini-stat {
+        background: rgba(255, 255, 255, 0.9);
+        border-radius: 16px;
+        padding: 0.7rem 0.9rem;
+        font-size: 0.8rem;
+        min-width: 160px;
+    }
+
+    .hero-mini-stat-label {
+        color: #4b5563;
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+    }
+
+    .hero-mini-stat-value {
+        font-size: 1.1rem;
+        font-weight: 700;
+    }
+
+    @@keyframes pulseCard {
+        0% {
+            transform: translateY(0) scale(1);
+            box-shadow: 0 16px 35px rgba(0, 0, 0, 0.35);
+        }
+        50% {
+            transform: translateY(-4px) scale(1.02);
+            box-shadow: 0 22px 45px rgba(0, 0, 0, 0.45);
+        }
+        100% {
+            transform: translateY(0) scale(1);
+            box-shadow: 0 16px 35px rgba(0, 0, 0, 0.35);
+        }
+    }
+
+    @@media (max-width: 767.98px) {
+        .hero-section {
+            padding: 2rem 1.4rem;
+            border-radius: 18px;
+        }
+
+        .hero-title {
+            font-size: 2rem;
+        }
+
+        .hero-badge-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .hero-cta-kpi {
+            flex-direction: column;
+        }
+    }
+</style>
+
+<div class="container my-4">
+    <div class="hero-section mb-4">
+        <div class="hero-overlay-pill"></div>
+        <div class="hero-overlay-pill-bottom"></div>
+
+        <div class="row align-items-center">
+            <div class="col-lg-7 col-md-7 mb-4 mb-md-0">
+                <div class="hero-tag">
+                    <span>Construction Claims Portal</span>
+                    <span style="width:10px;height:10px;border-radius:999px;background:#22c55e;"></span>
+                    <span>Live</span>
+                </div>
+
+                <h1 class="hero-title mt-3">
+                    Track, Approve, and Pay
+                    <br />
+                    Construction Work Claims
+                </h1>
+
+                <p class="hero-subtitle">
+                    One simple workflow for your contract workers, project managers, construction managers, and HR team.
+                    Submit jobs, approve claims, simulate payments, and export reports in a single place.
+                </p>
+
+                <div class="mt-3">
+                    <div class="mb-2" style="font-size:0.85rem;font-weight:600;text-transform:uppercase;letter-spacing:0.12em;">
+                        Current role shortcuts:
+                    </div>
+
+                    @if (!User.Identity.IsAuthenticated)
+                    {
+                        <div class="role-chip">
+                            <span class="icon">🔐</span>
+                            <span>Not logged in – use the login test accounts on the right</span>
+                        </div>
+                    }
+                    else
+                    {
+                        if (isWorker)
+                        {
+                            <div class="role-chip">
+                                <span class="icon">👷</span>
+                                <span>Worker: Submit and view my claims</span>
+                            </div>
+                        }
+                        if (isPm)
+                        {
+                            <div class="role-chip">
+                                <span class="icon">📋</span>
+                                <span>Project Manager: Review and reject with reasons</span>
+                            </div>
+                        }
+                        if (isCm)
+                        {
+                            <div class="role-chip">
+                                <span class="icon">🏗️</span>
+                                <span>Construction Manager: Final review and follow-ups</span>
+                            </div>
+                        }
+                        if (isHr)
+                        {
+                            <div class="role-chip">
+                                <span class="icon">💰</span>
+                                <span>HR: Mark paid, export CSV, and manage employees</span>
+                            </div>
+                        }
+                    }
+                </div>
+
+                <div class="hero-actions mt-4">
+                    <div class="d-flex flex-wrap gap-2">
+                        @if (!User.Identity.IsAuthenticated)
+                        {
+                            <a asp-area="Identity" asp-page="/Account/Login" class="btn btn-primary me-2 mb-2">
+                                Log in to start
+                            </a>
+                        }
+                        else if (isWorker)
+                        {
+                            <a asp-controller="WorkClaims" asp-action="Create" class="btn btn-primary me-2 mb-2">
+                                Submit a new claim
+                            </a>
+                            <a asp-controller="WorkClaims" asp-action="PaymentSimulation" class="btn btn-outline-light mb-2">
+                                Payment simulation
+                            </a>
+                        }
+                        else if (isPm)
+                        {
+                            <a asp-controller="WorkClaims" asp-action="PmPending" class="btn btn-primary me-2 mb-2">
+                                Review pending claims
+                            </a>
+                            <a asp-controller="WorkClaims" asp-action="PmNotifications" class="btn btn-outline-light mb-2">
+                                View PM notifications
+                            </a>
+                        }
+                        else if (isCm)
+                        {
+                            <a asp-controller="WorkClaims" asp-action="CmReviewList" class="btn btn-primary me-2 mb-2">
+                                CM review queue
+                            </a>
+                            <a asp-controller="WorkClaims" asp-action="CmNotifications" class="btn btn-outline-light mb-2">
+                                CM notifications
+                            </a>
+                        }
+                        else if (isHr)
+                        {
+                            <a asp-controller="WorkClaims" asp-action="HrAllClaims" class="btn btn-primary me-2 mb-2">
+                                View all claims
+                            </a>
+                            <a asp-controller="WorkClaims" asp-action="HrSummary" class="btn btn-outline-light mb-2">
+                                View summary
+                            </a>
+                        }
+                    </div>
+                </div>
+
+                <div class="hero-cta-kpi">
+                    <div class="hero-mini-stat">
+                        <div class="hero-mini-stat-label">Flow</div>
+                        <div class="hero-mini-stat-value">Worker → PM → CM → HR</div>
+                        <div style="font-size:0.75rem;color:#6b7280;">Simple 4-step path from work done to paid.</div>
+                    </div>
+                    <div class="hero-mini-stat">
+                        <div class="hero-mini-stat-label">Automation</div>
+                        <div class="hero-mini-stat-value">Reason checks</div>
+                        <div style="font-size:0.75rem;color:#6b7280;">PM rejections without reasons trigger follow-ups.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="login-card-highlight mb-3">
+                <div class="login-card-header">
+                    <div class="login-card-title">
+                        Test Login Accounts
+                    </div>
+                    <div class="login-card-pill">
+                        Demo only · Do not change passwords
+                    </div>
+                </div>
+
+                <table class="login-card-table">
+                    <thead>
+                        <tr>
+                            <th style="width:22%;">Role</th>
+                            <th style="width:48%;">Email</th>
+                            <th style="width:30%;">Password</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span class="login-card-chip">HR</span></td>
+                            <td>hr@construction.com</td>
+                            <td>Hr@123!</td>
+                        </tr>
+                        <tr>
+                            <td><span class="login-card-chip">Project Manager</span></td>
+                            <td>projectmanager@construction.com</td>
+                            <td>Pm@123</td>
+                        </tr>
+                        <tr>
+                            <td><span class="login-card-chip">Construction Manager</span></td>
+                            <td>constructionmanager@gmail.com</td>
+                            <td>Cm@123</td>
+                        </tr>
+                        <tr>
+                            <td><span class="login-card-chip">Worker</span></td>
+                            <td>worker@construction.com</td>
+                            <td>Worker@123</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="login-card-note">
+                    Use these accounts to demonstrate the workflow:
+                    submit a claim as Worker, then log in as PM, CM, and HR to process the claim end-to-end.
+                </div>
+            </div>
+
+
+            <div class="hero-badge-grid">
+                <div class="hero-badge">
+                    <div class="hero-badge-dot"></div>
+                    <div>
+                        <div style="font-weight:600;">Auto salary calculation</div>
+                        <div style="font-size:0.8rem;color:#4b5563;">Rate × number of jobs, locked and calculated for the worker.</div>
+                    </div>
+                </div>
+                <div class="hero-badge">
+                    <div class="hero-badge-dot" style="background:#F2F527;"></div>
+                    <div>
+                        <div style="font-weight:600;">Reason-required rejections</div>
+                        <div style="font-size:0.8rem;color:#4b5563;">If the PM rejects without a reason, the system asks for one.</div>
+                    </div>
+                </div>
+                <div class="hero-badge">
+                    <div class="hero-badge-dot" style="background:#77ed96;"></div>
+                    <div>
+                        <div style="font-weight:600;">CM and HR oversight</div>
+                        <div style="font-size:0.8rem;color:#4b5563;">Construction Manager and HR see the full history of each claim.</div>
+                    </div>
+                </div>
+                <div class="hero-badge">
+                    <div class="hero-badge-dot" style="background:#b067f5;"></div>
+                    <div>
+                        <div style="font-weight:600;">CSV export and reporting</div>
+                        <div style="font-size:0.8rem;color:#4b5563;">HR can export claims and build simple payment reports.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="quick-links-section">
+    <div class="row g-3">
+        <div class="col-md-4">
+            <div class="quick-link-card">
+                <div class="quick-link-pill">For Workers</div>
+                <div class="quick-link-title">Submit work and simulate pay</div>
+                <p style="font-size:0.85rem;color:#4b5563;">
+                    Capture your completed jobs, see your salary calculation instantly, and track every claim you have submitted.
+                </p>
+                <a asp-controller="WorkClaims" asp-action="MyClaims" class="btn btn-sm btn-outline-dark mt-1">Go to my claims</a>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="quick-link-card">
+                <div class="quick-link-pill">For Managers</div>
+                <div class="quick-link-title">Review and escalate correctly</div>
+                <p style="font-size:0.85rem;color:#4b5563;">
+                    Project and Construction Managers can approve, reject, and follow up on claims, with clear reasons and notifications.
+                </p>
+                <a asp-controller="WorkClaims" asp-action="PmPending" class="btn btn-sm btn-outline-dark mt-1">PM queue</a>
+                <a asp-controller="WorkClaims" asp-action="CmReviewList" class="btn btn-sm btn-outline-dark mt-1 ms-1">CM queue</a>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="quick-link-card">
+                <div class="quick-link-pill">For HR</div>
+                <div class="quick-link-title">Finalize and export payments</div>
+                <p style="font-size:0.85rem;color:#4b5563;">
+                    View all claims, track paid vs unpaid, manage workers, and export claim data to CSV for payroll and reporting.
+                </p>
+                <a asp-controller="WorkClaims" asp-action="HrAllClaims" class="btn btn-sm btn-outline-dark mt-1">View all claims</a>
+            </div>
+        </div>
+    </div>
+</div>
+</div>

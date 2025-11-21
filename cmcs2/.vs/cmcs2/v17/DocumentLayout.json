@@ -1,0 +1,623 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\lab_services_student\\Desktop\\ST10377354_PROG6212_CMCS_POEPART2\\cmcs2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{91AEE81A-064D-434A-B57C-B8E1981C2367}|cmcs2.csproj|c:\\users\\lab_services_student\\desktop\\st10377354_prog6212_cmcs_poepart2\\cmcs2\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{91AEE81A-064D-434A-B57C-B8E1981C2367}|cmcs2.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91AEE81A-064D-434A-B57C-B8E1981C2367}|cmcs2.csproj|c:\\users\\lab_services_student\\desktop\\st10377354_prog6212_cmcs_poepart2\\cmcs2\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{91AEE81A-064D-434A-B57C-B8E1981C2367}|cmcs2.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91AEE81A-064D-434A-B57C-B8E1981C2367}|cmcs2.csproj|c:\\users\\lab_services_student\\desktop\\st10377354_prog6212_cmcs_poepart2\\cmcs2\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91AEE81A-064D-434A-B57C-B8E1981C2367}|cmcs2.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91AEE81A-064D-434A-B57C-B8E1981C2367}|cmcs2.csproj|c:\\users\\lab_services_student\\desktop\\st10377354_prog6212_cmcs_poepart2\\cmcs2\\migrations\\20251121080845_addidentitytables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91AEE81A-064D-434A-B57C-B8E1981C2367}|cmcs2.csproj|solutionrelative:migrations\\20251121080845_addidentitytables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91AEE81A-064D-434A-B57C-B8E1981C2367}|cmcs2.csproj|c:\\users\\lab_services_student\\desktop\\st10377354_prog6212_cmcs_poepart2\\cmcs2\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{91AEE81A-064D-434A-B57C-B8E1981C2367}|cmcs2.csproj|solutionrelative:views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91AEE81A-064D-434A-B57C-B8E1981C2367}|cmcs2.csproj|c:\\users\\lab_services_student\\desktop\\st10377354_prog6212_cmcs_poepart2\\cmcs2\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91AEE81A-064D-434A-B57C-B8E1981C2367}|cmcs2.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91AEE81A-064D-434A-B57C-B8E1981C2367}|cmcs2.csproj|c:\\users\\lab_services_student\\desktop\\st10377354_prog6212_cmcs_poepart2\\cmcs2\\data\\seeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91AEE81A-064D-434A-B57C-B8E1981C2367}|cmcs2.csproj|solutionrelative:data\\seeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91AEE81A-064D-434A-B57C-B8E1981C2367}|cmcs2.csproj|c:\\users\\lab_services_student\\desktop\\st10377354_prog6212_cmcs_poepart2\\cmcs2\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{91AEE81A-064D-434A-B57C-B8E1981C2367}|cmcs2.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91AEE81A-064D-434A-B57C-B8E1981C2367}|cmcs2.csproj|c:\\users\\lab_services_student\\desktop\\st10377354_prog6212_cmcs_poepart2\\cmcs2\\models\\notification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91AEE81A-064D-434A-B57C-B8E1981C2367}|cmcs2.csproj|solutionrelative:models\\notification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91AEE81A-064D-434A-B57C-B8E1981C2367}|cmcs2.csproj|c:\\users\\lab_services_student\\desktop\\st10377354_prog6212_cmcs_poepart2\\cmcs2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91AEE81A-064D-434A-B57C-B8E1981C2367}|cmcs2.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91AEE81A-064D-434A-B57C-B8E1981C2367}|cmcs2.csproj|c:\\users\\lab_services_student\\desktop\\st10377354_prog6212_cmcs_poepart2\\cmcs2\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{91AEE81A-064D-434A-B57C-B8E1981C2367}|cmcs2.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91AEE81A-064D-434A-B57C-B8E1981C2367}|cmcs2.csproj|c:\\users\\lab_services_student\\desktop\\st10377354_prog6212_cmcs_poepart2\\cmcs2\\cmcs2.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{91AEE81A-064D-434A-B57C-B8E1981C2367}|cmcs2.csproj|solutionrelative:cmcs2.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91AEE81A-064D-434A-B57C-B8E1981C2367}|cmcs2.csproj|c:\\users\\lab_services_student\\desktop\\st10377354_prog6212_cmcs_poepart2\\cmcs2\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{91AEE81A-064D-434A-B57C-B8E1981C2367}|cmcs2.csproj|solutionrelative:wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91AEE81A-064D-434A-B57C-B8E1981C2367}|cmcs2.csproj|c:\\users\\lab_services_student\\desktop\\st10377354_prog6212_cmcs_poepart2\\cmcs2\\models\\addemployeeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91AEE81A-064D-434A-B57C-B8E1981C2367}|cmcs2.csproj|solutionrelative:models\\addemployeeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91AEE81A-064D-434A-B57C-B8E1981C2367}|cmcs2.csproj|c:\\users\\lab_services_student\\desktop\\st10377354_prog6212_cmcs_poepart2\\cmcs2\\models\\workclaim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91AEE81A-064D-434A-B57C-B8E1981C2367}|cmcs2.csproj|solutionrelative:models\\workclaim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91AEE81A-064D-434A-B57C-B8E1981C2367}|cmcs2.csproj|c:\\users\\lab_services_student\\desktop\\st10377354_prog6212_cmcs_poepart2\\cmcs2\\models\\employeeprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91AEE81A-064D-434A-B57C-B8E1981C2367}|cmcs2.csproj|solutionrelative:models\\employeeprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91AEE81A-064D-434A-B57C-B8E1981C2367}|cmcs2.csproj|c:\\users\\lab_services_student\\desktop\\st10377354_prog6212_cmcs_poepart2\\cmcs2\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{91AEE81A-064D-434A-B57C-B8E1981C2367}|cmcs2.csproj|solutionrelative:views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91AEE81A-064D-434A-B57C-B8E1981C2367}|cmcs2.csproj|c:\\users\\lab_services_student\\desktop\\st10377354_prog6212_cmcs_poepart2\\cmcs2\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91AEE81A-064D-434A-B57C-B8E1981C2367}|cmcs2.csproj|solutionrelative:models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91AEE81A-064D-434A-B57C-B8E1981C2367}|cmcs2.csproj|c:\\users\\lab_services_student\\desktop\\st10377354_prog6212_cmcs_poepart2\\cmcs2\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{91AEE81A-064D-434A-B57C-B8E1981C2367}|cmcs2.csproj|solutionrelative:views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91AEE81A-064D-434A-B57C-B8E1981C2367}|cmcs2.csproj|c:\\users\\lab_services_student\\desktop\\st10377354_prog6212_cmcs_poepart2\\cmcs2\\views\\hr\\addemployee.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{91AEE81A-064D-434A-B57C-B8E1981C2367}|cmcs2.csproj|solutionrelative:views\\hr\\addemployee.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91AEE81A-064D-434A-B57C-B8E1981C2367}|cmcs2.csproj|c:\\users\\lab_services_student\\desktop\\st10377354_prog6212_cmcs_poepart2\\cmcs2\\views\\hr\\employeelist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{91AEE81A-064D-434A-B57C-B8E1981C2367}|cmcs2.csproj|solutionrelative:views\\hr\\employeelist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91AEE81A-064D-434A-B57C-B8E1981C2367}|cmcs2.csproj|c:\\users\\lab_services_student\\desktop\\st10377354_prog6212_cmcs_poepart2\\cmcs2\\views\\hr\\hrsummary.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{91AEE81A-064D-434A-B57C-B8E1981C2367}|cmcs2.csproj|solutionrelative:views\\hr\\hrsummary.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91AEE81A-064D-434A-B57C-B8E1981C2367}|cmcs2.csproj|c:\\users\\lab_services_student\\desktop\\st10377354_prog6212_cmcs_poepart2\\cmcs2\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{91AEE81A-064D-434A-B57C-B8E1981C2367}|cmcs2.csproj|solutionrelative:views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91AEE81A-064D-434A-B57C-B8E1981C2367}|cmcs2.csproj|c:\\users\\lab_services_student\\desktop\\st10377354_prog6212_cmcs_poepart2\\cmcs2\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{91AEE81A-064D-434A-B57C-B8E1981C2367}|cmcs2.csproj|solutionrelative:views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91AEE81A-064D-434A-B57C-B8E1981C2367}|cmcs2.csproj|c:\\users\\lab_services_student\\desktop\\st10377354_prog6212_cmcs_poepart2\\cmcs2\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{91AEE81A-064D-434A-B57C-B8E1981C2367}|cmcs2.csproj|solutionrelative:views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91AEE81A-064D-434A-B57C-B8E1981C2367}|cmcs2.csproj|c:\\users\\lab_services_student\\desktop\\st10377354_prog6212_cmcs_poepart2\\cmcs2\\views\\workclaims\\cmnotifications.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{91AEE81A-064D-434A-B57C-B8E1981C2367}|cmcs2.csproj|solutionrelative:views\\workclaims\\cmnotifications.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91AEE81A-064D-434A-B57C-B8E1981C2367}|cmcs2.csproj|c:\\users\\lab_services_student\\desktop\\st10377354_prog6212_cmcs_poepart2\\cmcs2\\views\\workclaims\\cmreject.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{91AEE81A-064D-434A-B57C-B8E1981C2367}|cmcs2.csproj|solutionrelative:views\\workclaims\\cmreject.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91AEE81A-064D-434A-B57C-B8E1981C2367}|cmcs2.csproj|c:\\users\\lab_services_student\\desktop\\st10377354_prog6212_cmcs_poepart2\\cmcs2\\views\\workclaims\\cmreviewlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{91AEE81A-064D-434A-B57C-B8E1981C2367}|cmcs2.csproj|solutionrelative:views\\workclaims\\cmreviewlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91AEE81A-064D-434A-B57C-B8E1981C2367}|cmcs2.csproj|c:\\users\\lab_services_student\\desktop\\st10377354_prog6212_cmcs_poepart2\\cmcs2\\views\\workclaims\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{91AEE81A-064D-434A-B57C-B8E1981C2367}|cmcs2.csproj|solutionrelative:views\\workclaims\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91AEE81A-064D-434A-B57C-B8E1981C2367}|cmcs2.csproj|c:\\users\\lab_services_student\\desktop\\st10377354_prog6212_cmcs_poepart2\\cmcs2\\views\\workclaims\\hrallclaims.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{91AEE81A-064D-434A-B57C-B8E1981C2367}|cmcs2.csproj|solutionrelative:views\\workclaims\\hrallclaims.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91AEE81A-064D-434A-B57C-B8E1981C2367}|cmcs2.csproj|c:\\users\\lab_services_student\\desktop\\st10377354_prog6212_cmcs_poepart2\\cmcs2\\views\\workclaims\\myclaims.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{91AEE81A-064D-434A-B57C-B8E1981C2367}|cmcs2.csproj|solutionrelative:views\\workclaims\\myclaims.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91AEE81A-064D-434A-B57C-B8E1981C2367}|cmcs2.csproj|c:\\users\\lab_services_student\\desktop\\st10377354_prog6212_cmcs_poepart2\\cmcs2\\views\\workclaims\\paymentsimulation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{91AEE81A-064D-434A-B57C-B8E1981C2367}|cmcs2.csproj|solutionrelative:views\\workclaims\\paymentsimulation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91AEE81A-064D-434A-B57C-B8E1981C2367}|cmcs2.csproj|c:\\users\\lab_services_student\\desktop\\st10377354_prog6212_cmcs_poepart2\\cmcs2\\views\\workclaims\\pmaddreason.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{91AEE81A-064D-434A-B57C-B8E1981C2367}|cmcs2.csproj|solutionrelative:views\\workclaims\\pmaddreason.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91AEE81A-064D-434A-B57C-B8E1981C2367}|cmcs2.csproj|c:\\users\\lab_services_student\\desktop\\st10377354_prog6212_cmcs_poepart2\\cmcs2\\views\\workclaims\\pmnotifications.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{91AEE81A-064D-434A-B57C-B8E1981C2367}|cmcs2.csproj|solutionrelative:views\\workclaims\\pmnotifications.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91AEE81A-064D-434A-B57C-B8E1981C2367}|cmcs2.csproj|c:\\users\\lab_services_student\\desktop\\st10377354_prog6212_cmcs_poepart2\\cmcs2\\views\\workclaims\\pmpending.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{91AEE81A-064D-434A-B57C-B8E1981C2367}|cmcs2.csproj|solutionrelative:views\\workclaims\\pmpending.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91AEE81A-064D-434A-B57C-B8E1981C2367}|cmcs2.csproj|c:\\users\\lab_services_student\\desktop\\st10377354_prog6212_cmcs_poepart2\\cmcs2\\views\\workclaims\\pmreject.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{91AEE81A-064D-434A-B57C-B8E1981C2367}|cmcs2.csproj|solutionrelative:views\\workclaims\\pmreject.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91AEE81A-064D-434A-B57C-B8E1981C2367}|cmcs2.csproj|c:\\users\\lab_services_student\\desktop\\st10377354_prog6212_cmcs_poepart2\\cmcs2\\controllers\\hrcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91AEE81A-064D-434A-B57C-B8E1981C2367}|cmcs2.csproj|solutionrelative:controllers\\hrcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "cmcs2.csproj",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Desktop\\ST10377354_PROG6212_CMCS_POEPART2\\cmcs2\\cmcs2.csproj",
+              "RelativeDocumentMoniker": "cmcs2.csproj",
+              "ToolTip": "C:\\Users\\lab_services_student\\Desktop\\ST10377354_PROG6212_CMCS_POEPART2\\cmcs2\\cmcs2.csproj",
+              "RelativeToolTip": "cmcs2.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-11-21T06:22:04.868Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Desktop\\ST10377354_PROG6212_CMCS_POEPART2\\cmcs2\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Desktop\\ST10377354_PROG6212_CMCS_POEPART2\\cmcs2\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAAwDIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-21T06:14:34.624Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AddEmployeeViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Desktop\\ST10377354_PROG6212_CMCS_POEPART2\\cmcs2\\Models\\AddEmployeeViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\AddEmployeeViewModel.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Desktop\\ST10377354_PROG6212_CMCS_POEPART2\\cmcs2\\Models\\AddEmployeeViewModel.cs",
+              "RelativeToolTip": "Models\\AddEmployeeViewModel.cs",
+              "ViewState": "AgIAAAQAAABQMzMzMzMrwBUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-21T05:19:58.679Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Desktop\\ST10377354_PROG6212_CMCS_POEPART2\\cmcs2\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Desktop\\ST10377354_PROG6212_CMCS_POEPART2\\cmcs2\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAgwBEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-21T05:10:27.688Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Desktop\\ST10377354_PROG6212_CMCS_POEPART2\\cmcs2\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\Desktop\\ST10377354_PROG6212_CMCS_POEPART2\\cmcs2\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAEMAAAAAlpmZmdkhwNkAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-21T06:00:05.976Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Desktop\\ST10377354_PROG6212_CMCS_POEPART2\\cmcs2\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Desktop\\ST10377354_PROG6212_CMCS_POEPART2\\cmcs2\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-19T05:58:47.653Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Desktop\\ST10377354_PROG6212_CMCS_POEPART2\\cmcs2\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\Desktop\\ST10377354_PROG6212_CMCS_POEPART2\\cmcs2\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAKcBAAAAZGZmZmYAwMkBAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-21T06:00:49.567Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "WorkClaim.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Desktop\\ST10377354_PROG6212_CMCS_POEPART2\\cmcs2\\Models\\WorkClaim.cs",
+              "RelativeDocumentMoniker": "Models\\WorkClaim.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Desktop\\ST10377354_PROG6212_CMCS_POEPART2\\cmcs2\\Models\\WorkClaim.cs",
+              "RelativeToolTip": "Models\\WorkClaim.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-21T05:20:16.602Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "20251121080845_AddIdentityTables.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Desktop\\ST10377354_PROG6212_CMCS_POEPART2\\cmcs2\\Migrations\\20251121080845_AddIdentityTables.cs",
+              "RelativeDocumentMoniker": "Migrations\\20251121080845_AddIdentityTables.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Desktop\\ST10377354_PROG6212_CMCS_POEPART2\\cmcs2\\Migrations\\20251121080845_AddIdentityTables.cs",
+              "RelativeToolTip": "Migrations\\20251121080845_AddIdentityTables.cs",
+              "ViewState": "AgIAALAAAAAAZ2ZmZmbwv8sAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-21T08:11:06.643Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Notification.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Desktop\\ST10377354_PROG6212_CMCS_POEPART2\\cmcs2\\Models\\Notification.cs",
+              "RelativeDocumentMoniker": "Models\\Notification.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Desktop\\ST10377354_PROG6212_CMCS_POEPART2\\cmcs2\\Models\\Notification.cs",
+              "RelativeToolTip": "Models\\Notification.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAwwBUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-21T05:20:10.876Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Desktop\\ST10377354_PROG6212_CMCS_POEPART2\\cmcs2\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\Desktop\\ST10377354_PROG6212_CMCS_POEPART2\\cmcs2\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-21T05:58:26.011Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Desktop\\ST10377354_PROG6212_CMCS_POEPART2\\cmcs2\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\lab_services_student\\Desktop\\ST10377354_PROG6212_CMCS_POEPART2\\cmcs2\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Properties\\launchSettings.json",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAgwBYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-21T07:14:02.111Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SeedData.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Desktop\\ST10377354_PROG6212_CMCS_POEPART2\\cmcs2\\Data\\SeedData.cs",
+              "RelativeDocumentMoniker": "Data\\SeedData.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Desktop\\ST10377354_PROG6212_CMCS_POEPART2\\cmcs2\\Data\\SeedData.cs",
+              "RelativeToolTip": "Data\\SeedData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-21T06:01:20.002Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Desktop\\ST10377354_PROG6212_CMCS_POEPART2\\cmcs2\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\lab_services_student\\Desktop\\ST10377354_PROG6212_CMCS_POEPART2\\cmcs2\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-21T05:52:11.189Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "EmployeeProfile.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Desktop\\ST10377354_PROG6212_CMCS_POEPART2\\cmcs2\\Models\\EmployeeProfile.cs",
+              "RelativeDocumentMoniker": "Models\\EmployeeProfile.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Desktop\\ST10377354_PROG6212_CMCS_POEPART2\\cmcs2\\Models\\EmployeeProfile.cs",
+              "RelativeToolTip": "Models\\EmployeeProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-21T05:20:05.006Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Desktop\\ST10377354_PROG6212_CMCS_POEPART2\\cmcs2\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\Desktop\\ST10377354_PROG6212_CMCS_POEPART2\\cmcs2\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-21T05:58:31Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Desktop\\ST10377354_PROG6212_CMCS_POEPART2\\cmcs2\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\lab_services_student\\Desktop\\ST10377354_PROG6212_CMCS_POEPART2\\cmcs2\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "wwwroot\\css\\site.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-11-21T06:48:25.402Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "AddEmployee.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Desktop\\ST10377354_PROG6212_CMCS_POEPART2\\cmcs2\\Views\\Hr\\AddEmployee.cshtml",
+              "RelativeDocumentMoniker": "Views\\Hr\\AddEmployee.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\Desktop\\ST10377354_PROG6212_CMCS_POEPART2\\cmcs2\\Views\\Hr\\AddEmployee.cshtml",
+              "RelativeToolTip": "Views\\Hr\\AddEmployee.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-21T06:00:30.501Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Desktop\\ST10377354_PROG6212_CMCS_POEPART2\\cmcs2\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Privacy.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\Desktop\\ST10377354_PROG6212_CMCS_POEPART2\\cmcs2\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "Views\\Home\\Privacy.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-21T06:00:46.359Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Desktop\\ST10377354_PROG6212_CMCS_POEPART2\\cmcs2\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\ErrorViewModel.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Desktop\\ST10377354_PROG6212_CMCS_POEPART2\\cmcs2\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "Models\\ErrorViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-21T06:01:07.932Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "EmployeeList.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Desktop\\ST10377354_PROG6212_CMCS_POEPART2\\cmcs2\\Views\\Hr\\EmployeeList.cshtml",
+              "RelativeDocumentMoniker": "Views\\Hr\\EmployeeList.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\Desktop\\ST10377354_PROG6212_CMCS_POEPART2\\cmcs2\\Views\\Hr\\EmployeeList.cshtml",
+              "RelativeToolTip": "Views\\Hr\\EmployeeList.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-21T06:00:16.342Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "HrSummary.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Desktop\\ST10377354_PROG6212_CMCS_POEPART2\\cmcs2\\Views\\Hr\\HrSummary.cshtml",
+              "RelativeDocumentMoniker": "Views\\Hr\\HrSummary.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\Desktop\\ST10377354_PROG6212_CMCS_POEPART2\\cmcs2\\Views\\Hr\\HrSummary.cshtml",
+              "RelativeToolTip": "Views\\Hr\\HrSummary.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-21T06:00:12.919Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "_LoginPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Desktop\\ST10377354_PROG6212_CMCS_POEPART2\\cmcs2\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_LoginPartial.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\Desktop\\ST10377354_PROG6212_CMCS_POEPART2\\cmcs2\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_LoginPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-21T06:00:01.972Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Desktop\\ST10377354_PROG6212_CMCS_POEPART2\\cmcs2\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\Desktop\\ST10377354_PROG6212_CMCS_POEPART2\\cmcs2\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-21T05:59:58.912Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Desktop\\ST10377354_PROG6212_CMCS_POEPART2\\cmcs2\\Views\\Shared\\Error.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\Error.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\Desktop\\ST10377354_PROG6212_CMCS_POEPART2\\cmcs2\\Views\\Shared\\Error.cshtml",
+              "RelativeToolTip": "Views\\Shared\\Error.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-21T05:59:54.741Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "CmNotifications.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Desktop\\ST10377354_PROG6212_CMCS_POEPART2\\cmcs2\\Views\\WorkClaims\\CmNotifications.cshtml",
+              "RelativeDocumentMoniker": "Views\\WorkClaims\\CmNotifications.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\Desktop\\ST10377354_PROG6212_CMCS_POEPART2\\cmcs2\\Views\\WorkClaims\\CmNotifications.cshtml",
+              "RelativeToolTip": "Views\\WorkClaims\\CmNotifications.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-21T05:59:47.903Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "CmReject.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Desktop\\ST10377354_PROG6212_CMCS_POEPART2\\cmcs2\\Views\\WorkClaims\\CmReject.cshtml",
+              "RelativeDocumentMoniker": "Views\\WorkClaims\\CmReject.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\Desktop\\ST10377354_PROG6212_CMCS_POEPART2\\cmcs2\\Views\\WorkClaims\\CmReject.cshtml",
+              "RelativeToolTip": "Views\\WorkClaims\\CmReject.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-21T05:59:45.58Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "CmReviewList.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Desktop\\ST10377354_PROG6212_CMCS_POEPART2\\cmcs2\\Views\\WorkClaims\\CmReviewList.cshtml",
+              "RelativeDocumentMoniker": "Views\\WorkClaims\\CmReviewList.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\Desktop\\ST10377354_PROG6212_CMCS_POEPART2\\cmcs2\\Views\\WorkClaims\\CmReviewList.cshtml",
+              "RelativeToolTip": "Views\\WorkClaims\\CmReviewList.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-21T05:59:42.046Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Desktop\\ST10377354_PROG6212_CMCS_POEPART2\\cmcs2\\Views\\WorkClaims\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\WorkClaims\\Create.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\Desktop\\ST10377354_PROG6212_CMCS_POEPART2\\cmcs2\\Views\\WorkClaims\\Create.cshtml",
+              "RelativeToolTip": "Views\\WorkClaims\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-21T05:59:38.796Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "HrAllClaims.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Desktop\\ST10377354_PROG6212_CMCS_POEPART2\\cmcs2\\Views\\WorkClaims\\HrAllClaims.cshtml",
+              "RelativeDocumentMoniker": "Views\\WorkClaims\\HrAllClaims.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\Desktop\\ST10377354_PROG6212_CMCS_POEPART2\\cmcs2\\Views\\WorkClaims\\HrAllClaims.cshtml",
+              "RelativeToolTip": "Views\\WorkClaims\\HrAllClaims.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-21T05:59:36.051Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "MyClaims.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Desktop\\ST10377354_PROG6212_CMCS_POEPART2\\cmcs2\\Views\\WorkClaims\\MyClaims.cshtml",
+              "RelativeDocumentMoniker": "Views\\WorkClaims\\MyClaims.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\Desktop\\ST10377354_PROG6212_CMCS_POEPART2\\cmcs2\\Views\\WorkClaims\\MyClaims.cshtml",
+              "RelativeToolTip": "Views\\WorkClaims\\MyClaims.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-21T05:59:31.963Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "PaymentSimulation.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Desktop\\ST10377354_PROG6212_CMCS_POEPART2\\cmcs2\\Views\\WorkClaims\\PaymentSimulation.cshtml",
+              "RelativeDocumentMoniker": "Views\\WorkClaims\\PaymentSimulation.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\Desktop\\ST10377354_PROG6212_CMCS_POEPART2\\cmcs2\\Views\\WorkClaims\\PaymentSimulation.cshtml",
+              "RelativeToolTip": "Views\\WorkClaims\\PaymentSimulation.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-21T05:59:22.21Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "PmAddReason.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Desktop\\ST10377354_PROG6212_CMCS_POEPART2\\cmcs2\\Views\\WorkClaims\\PmAddReason.cshtml",
+              "RelativeDocumentMoniker": "Views\\WorkClaims\\PmAddReason.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\Desktop\\ST10377354_PROG6212_CMCS_POEPART2\\cmcs2\\Views\\WorkClaims\\PmAddReason.cshtml",
+              "RelativeToolTip": "Views\\WorkClaims\\PmAddReason.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-21T05:59:17.288Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "PmNotifications.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Desktop\\ST10377354_PROG6212_CMCS_POEPART2\\cmcs2\\Views\\WorkClaims\\PmNotifications.cshtml",
+              "RelativeDocumentMoniker": "Views\\WorkClaims\\PmNotifications.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\Desktop\\ST10377354_PROG6212_CMCS_POEPART2\\cmcs2\\Views\\WorkClaims\\PmNotifications.cshtml",
+              "RelativeToolTip": "Views\\WorkClaims\\PmNotifications.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-21T05:59:03.529Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "PmPending.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Desktop\\ST10377354_PROG6212_CMCS_POEPART2\\cmcs2\\Views\\WorkClaims\\PmPending.cshtml",
+              "RelativeDocumentMoniker": "Views\\WorkClaims\\PmPending.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\Desktop\\ST10377354_PROG6212_CMCS_POEPART2\\cmcs2\\Views\\WorkClaims\\PmPending.cshtml",
+              "RelativeToolTip": "Views\\WorkClaims\\PmPending.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-21T05:58:47.866Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "PmReject.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Desktop\\ST10377354_PROG6212_CMCS_POEPART2\\cmcs2\\Views\\WorkClaims\\PmReject.cshtml",
+              "RelativeDocumentMoniker": "Views\\WorkClaims\\PmReject.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\Desktop\\ST10377354_PROG6212_CMCS_POEPART2\\cmcs2\\Views\\WorkClaims\\PmReject.cshtml",
+              "RelativeToolTip": "Views\\WorkClaims\\PmReject.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-21T05:58:37.005Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "HrController.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Desktop\\ST10377354_PROG6212_CMCS_POEPART2\\cmcs2\\Controllers\\HrController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HrController.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Desktop\\ST10377354_PROG6212_CMCS_POEPART2\\cmcs2\\Controllers\\HrController.cs",
+              "RelativeToolTip": "Controllers\\HrController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAKcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-19T05:57:45.779Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
